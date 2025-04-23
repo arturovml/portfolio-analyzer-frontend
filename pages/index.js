@@ -11,7 +11,7 @@ import Collapsible from '../components/Collapsible';
 import ChartFrame from '../components/ChartFrame';
 
 // Constantes
-const API_URL = 'http://localhost:8000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 export default function Home() {
   // Estados
